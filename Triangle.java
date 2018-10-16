@@ -14,9 +14,9 @@ public class Triangle {
   
 
   public double getPerimeter(){
-    double perimeter = Point.distance(p0, p1) + Point.distance(p1, p2) + Point.distance(p2, p0);
+      return p0.distanceTo(p1) + p1.distanceTo(p2) + p2.distanceTo(p0);
+
     // use distance between two points to find distance of side and repeat for all three sides
-    return perimeter;
   }
       
   public Point getVertex(int pt_number){
